@@ -1,0 +1,39 @@
+{
+  "name": "dobroed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp",
+    "server": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://gitlab.com/nimaxlab/clients/dobroed/dobroed-front.git"
+  },
+  "keywords": [],
+  "author": "Nimax",
+  "license": "MIT",
+  "homepage": "[HOMEPAGE]",
+  "bugs": {
+    "url": ""
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-js-import": "^1.0.6",
+    "gulp-minify": "^3.1.0",
+    "gulp-nunjucks": "^5.1.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-watch": "^5.0.1",
+    "sass": "^1.43.5"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3",
+    "gsap": "^3.3.4",
+    "gulp-connect": "^5.7.0",
+    "imagesloaded": "^4.1.4"
+  }
+}
