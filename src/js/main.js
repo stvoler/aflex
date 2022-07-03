@@ -2,6 +2,7 @@ if (document.getElementsByClassName("slider").length){
 	let swiper = new Swiper(".slider", {
 		slideClass: 'slider-item',
     slidesPerView: 1,
+		loop: true,
 		pagination: {
 			el: ".slider-bullets",
 			clickable: true,
