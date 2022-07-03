@@ -71,8 +71,8 @@ if (document.getElementsByClassName("reviews-carousel").length){
 
 "use strict";
 document.querySelectorAll("main").forEach((tab) => {
-  const tabHeading = tab.querySelectorAll(".new-fermers-item");
-  const tabContent = tab.querySelectorAll(".new-fermers-content");
+  const tabHeading = tab.querySelectorAll(".filter .item");
+  const tabContent = tab.querySelectorAll(".catalog-main .catalog");
   let tabName;
   tabHeading.forEach((element) => {
     element.addEventListener("click", () => {

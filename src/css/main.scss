@@ -186,6 +186,12 @@ section{
   grid-template-columns: 1fr auto auto;
   grid-row-gap: 24px;
   grid-column-gap: 12px;
+  .catalog{
+    display: none;
+    &.active{
+      display: grid;
+    }
+  }
   .title,
   .map{
     grid-column: 1/-1;

@@ -2,6 +2,7 @@
 {% block css %}
   <link rel="stylesheet" type="text/css" href="css/main.css">
 {% endblock %}
+{% block logo %}<img src="img/logo-white.png">{% endblock %}
 {% block content %}
   <section class="slider swiper">
     <div class="slider-items swiper-wrapper">
@@ -40,14 +41,14 @@
   <section class="catalog-main container">
     <h2 class="title h2">Изоляционный материал</h2>
     <div class="filter">
-      <div class="item active">Вспененные полиэтилен</div>
-      <div class="item">Строительная изоляция</div>
-      <div class="item">Инженерная изоляция</div>
-      <div class="item">Упаковка и транспортировка</div>
-      <div class="item">Для спорта и отдыха</div>
-      <div class="item">Ложементы</div>
+      <div class="item active" data-tab-index="tab-1">Вспененные полиэтилен</div>
+      <div class="item" data-tab-index="tab-2">Строительная изоляция</div>
+      <div class="item" data-tab-index="tab-3">Инженерная изоляция</div>
+      <div class="item" data-tab-index="tab-4">Упаковка и транспортировка</div>
+      <div class="item" data-tab-index="tab-5">Для спорта и отдыха</div>
+      <div class="item" data-tab-index="tab-6">Ложементы</div>
     </div>
-    <div class="catalog">
+    <div class="catalog tab-1 active">
       <div class="catalog-item">
         <div class="img"><img src="img/pr-1.jpg"></div>
         <div class="title">Стенофлекс 400</div>
@@ -104,6 +105,184 @@
       </div>
       <div class="catalog-item">
         <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+    </div>
+    <div class="catalog tab-2">
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофлекс 400</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофлекс 4000</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-3.jpg"></div>
+        <div class="title">Стенофлекс 10500</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-3.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+    </div>
+    <div class="catalog tab-3">
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофлекс 4000</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-3.jpg"></div>
+        <div class="title">Стенофлекс 10500</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-3.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+    </div>
+    <div class="catalog tab-4">
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофлекс 400</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-3.jpg"></div>
+        <div class="title">Стенофлекс 10500</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-3.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+    </div>
+    <div class="catalog tab-5">
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофлекс 400</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофлекс 4000</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-3.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+    </div>
+    <div class="catalog tab-6">
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-2.jpg"></div>
+        <div class="title">Стенофон Sport</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-3.jpg"></div>
+        <div class="title">Стенофон Acoustic Vent</div>
+        <div class="text">Подложка под напольные покрытия</div>
+        <button class="btn"><div class="icon-search"></div></button>
+      </div>
+      <div class="catalog-item">
+        <div class="img"><img src="img/pr-1.jpg"></div>
         <div class="title">Стенофон Acoustic Vent</div>
         <div class="text">Подложка под напольные покрытия</div>
         <button class="btn"><div class="icon-search"></div></button>
