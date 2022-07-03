@@ -374,6 +374,34 @@
       }
     }
   }
+	&-tabs{
+    display: flex;
+    align-items: center;
+    background: var(--color2);
+    border-radius: 12px;
+    padding: 6px 7px;
+		font-size: 14px;
+		font-weight: 600;
+		.item{
+			padding: 16px 20px;
+			gap: 4px;
+			background-color: rgba(255,255,255,0);
+			border-radius: 8px;
+			cursor: pointer;
+			transition: background-color .18s ease-in-out;
+			&:hover,
+			&.active {
+				background-color: #fff;
+			}
+		}
+	}
+	&-tab{
+		display: none;
+		flex-direction: column;
+		&.active{
+			display: flex;
+		}
+	}
 }
 
 .catalog{

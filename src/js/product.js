@@ -1,7 +1,7 @@
 "use strict";
 document.querySelectorAll("main").forEach((tab) => {
-  const tabHeading = tab.querySelectorAll(".fermer-tabs .item");
-  const tabContent = tab.querySelectorAll(".fermer-tab");
+  const tabHeading = tab.querySelectorAll(".product-tabs .item");
+  const tabContent = tab.querySelectorAll(".product-tab");
   let tabName;
   tabHeading.forEach((element) => {
     element.addEventListener("click", () => {
