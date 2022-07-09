@@ -225,3 +225,31 @@ selects.forEach(el => {
   new CustomSelect(el);
 })
 /* SELECT Style END */
+
+
+const triggerMenu = document.querySelector('.trigger-menu-catalog');
+const menuCatalog = document.querySelector('.menu-top');
+const menuCatalogLi = document.querySelectorAll('.menu-top .menu > li');
+// const menuTop = document.querySelector('.menu-top');
+const modalBg = document.querySelector('#modal-bg');
+triggerMenu.onclick = function() {
+  this.classList.toggle('active');
+	menuCatalog.classList.toggle('show');
+  // menuTop.classList.toggle('show');
+  modalBg.classList.toggle('menu-bg');
+  modalBg.classList.toggle('open');
+}
+modalBg.onclick = function() {
+	triggerMenu.classList.remove('active');
+	menuCatalog.classList.remove('show');
+  // menuTop.classList.remove('show');
+	modalBg.classList.remove('open', 'menu-bg');
+}
+menuCatalogLi.forEach(el => {
+  el.addEventListener('click', () => {
+    menuCatalogLi.forEach((item) => {
+      item.classList.remove("active");
+    });
+    el.classList.toggle('active');
+  })
+})

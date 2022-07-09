@@ -15,16 +15,16 @@ if (document.getElementsByClassName("slider").length){
 	});
 }
 
-if (document.getElementsByClassName("new-fermers-carousel").length){
-	let swiper = new Swiper(".new-fermers-carousel", {
+if (document.getElementsByClassName("news-carousel").length){
+	let swiper = new Swiper(".news-carousel", {
 		slidesPerView: 3,
 		spaceBetween: 20,
-		slideClass: 'new-fermers-item',
+		slideClass: 'news-item',
 		setWrapperSize: true,
-		navigation: {
-			nextEl: '.new-fermers .arrow-right',
-			prevEl: '.new-fermers .arrow-left',
-		},
+		// navigation: {
+		// 	nextEl: '.new-fermers .arrow-right',
+		// 	prevEl: '.new-fermers .arrow-left',
+		// },
 		breakpoints: {
 			320: {
 				slidesPerView: 1,
@@ -39,15 +39,15 @@ if (document.getElementsByClassName("new-fermers-carousel").length){
 				spaceBetween: 10,
 			},
 			1000: {
-				slidesPerView: 4,
+				slidesPerView: 3,
 				spaceBetween: 15
 			},
 			1400: {
-				slidesPerView: 5,
+				slidesPerView: 4,
 				spaceBetween: 20
 			},
 			3200: {
-				slidesPerView: 5,
+				slidesPerView: 4,
 				spaceBetween: 20
 			},
 		},

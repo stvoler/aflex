@@ -1,0 +1,282 @@
+.modal{
+  &-add-product{
+    font-size: 14px;
+    line-height: 20px;
+    box-shadow: 0px 4px 16px rgba(62, 70, 75, 0.12);
+    border-radius: 16px;
+    .form{
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      grid-gap: 24px;
+    }
+    fieldset,
+    .fieldset{
+      border: none;
+      display: contents;
+    }
+    input[type="text"],
+    textarea,
+    .select{
+      min-height: 54px;
+      background: #FCFCFC;
+      border: 1px solid #E7EAF2;
+      border-radius: 8px;
+      color: black;
+      font-size: 14px;
+    }
+    input{
+      &:valid{
+        border-bottom-color: #e7eaf2;
+      }
+    }
+    .item{
+      width: 100%;
+      grid-column: 1/-1;
+      &.grid-3{
+        display: grid;
+        grid-template-columns: 150px auto 1fr;
+      }
+    }
+    .images{
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 12px;
+      .img{
+        width: 120px;
+        height: 120px;
+        border-radius: 12px;
+        overflow: hidden;
+        &.add-img{
+          background: #FCFCFC;
+          border: 1px dashed #E3E5E8;
+          padding: 18px 21px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 12px;
+          font-weight: 500;
+          font-size: 12px;
+          line-height: 16px;
+          color: #54A900;
+          img{
+            height: auto;
+            width: fit-content;
+          }
+        }
+        img{
+          height: 100%;
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+#modal-bg{
+  display: none;
+  position: fixed;
+  z-index: 20;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: var(--color3);
+  opacity: 0.8;
+  transition: opacity 0.2s ease-in-out;
+  &.open{
+    display: block;
+  }
+  &.menu-bg{
+		background: rgba(46, 48, 51, 0.5);
+		right: 0;
+		left: auto;
+		opacity: 0;
+		width: calc(100% - clamp(540px, 65vw, 660px));
+		-webkit-animation-name: animateOpacity;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animateOpacity;
+    animation-duration: 0.4s;
+		transition: opacity 0.4s ease-in-out;
+		&.open{
+			opacity: 1;
+		}
+		&::before{
+			content: '';
+			cursor: pointer;
+			width: 44px;
+			height: 44px;
+			background-color: white;
+			border-radius: 50%;
+			display: flex;
+			align-items: center;
+			position: absolute;
+			top: 16px;
+			left: 16px;
+			background-repeat: no-repeat;
+			background-size: auto;
+			background-position: center;
+			background-image: url("data:image/svg+xml,%3Csvg width='28' height='28' viewBox='0 0 28 28' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg opacity='0.3'%3E%3Cpath d='M19.6004 8.40039L8.40039 19.6004' stroke='%231E1E1E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M8.40039 8.40039L19.6004 19.6004' stroke='%231E1E1E' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/g%3E%3C/svg%3E");
+			transition: background-color 0.18s ease-in-out;
+			&:hover{
+				background-color: var(--color2);
+			}
+		}
+  }
+}
+.modal{
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  left: 0;
+  right: 0;
+  top: 0;
+  margin: auto;
+  z-index: 21;
+  background: #fff;
+  -webkit-animation-name: animateCenter;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animateCenter;
+  animation-duration: 0.4s;
+  &::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 2px rgba(0, 0, 0, 0.05);
+    background-color: transparent;
+    border-radius: 0;
+  }
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: transparent;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 12px;
+    background-color: rgb(212, 212, 212);
+  }
+  &.cart-mini{
+    -webkit-animation-name: animateTop;
+    animation-name: animateTop;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="time"],
+  input[type="date"],
+  input[type="password"],
+  input[type="password" i]
+  textarea{
+    &:-webkit-autofill {
+      -webkit-box-shadow: inset 0 0 0 50px white !important;
+      -webkit-text-fill-color: var(--color3) !important;
+      color: var(--color3) !important;
+    }
+  }
+  input[type="date"]{
+    color: black;
+    &:focus{
+      &::-webkit-datetime-edit {
+        color: black !important;
+      }
+    }
+    &:empty{
+      color: rgba(0,0,0,0.6);
+      &::-webkit-datetime-edit {
+        color: rgba(0,0,0,0.6);
+      }
+    }
+  }
+}
+
+.close-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: clamp(40px, 5vw, 54px);
+  min-height: clamp(40px, 5vw, 54px);
+  width: clamp(40px, 5vw, 54px);
+  height: clamp(40px, 5vw, 54px);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: filter .2s ease-in-out;
+  cursor: pointer;
+	position: absolute;
+	right: 23px;
+	top: 23px;
+	z-index: 2;
+}
+
+@-webkit-keyframes animateCenter {
+  from {transform: scale(0); opacity:0}
+  to {transform: scale(1); opacity:1}
+}
+@keyframes animateCenter {
+  from {transform: scale(0); opacity:0}
+  to {transform: scale(1); opacity:1}
+}
+
+@-webkit-keyframes animateOpacity {
+  from {opacity:0}
+  to {opacity:1}
+}
+@keyframes animateOpacity {
+  from {opacity:0}
+  to {opacity:1}
+}
+
+@-webkit-keyframes animateRight {
+  from {transform: translateX(200px); opacity:0}
+  to {transform: translateX(0); opacity:1}
+}
+@keyframes animateRight {
+  from {transform: translateX(200px); opacity:0}
+  to {transform: translateY(0); opacity:1}
+}
+
+@-webkit-keyframes animateLeft {
+  from {transform: translateX(-200px); opacity:0}
+  to {transform: translateX(0); opacity:1}
+}
+@keyframes animateLeft {
+  from {transform: translateX(-200px); opacity:0}
+  to {transform: translateY(0); opacity:1}
+}
+
+@-webkit-keyframes animateMenu {
+  from {transform: scale(1.1); opacity:0}
+  to {transform: scale(1); opacity:1}
+}
+@keyframes animateMenu {
+  from {transform: scale(1.1); opacity:0}
+  to {transform: scale(1); opacity:1}
+}
+
+@-webkit-keyframes animateTop {
+  from {transform: translateY(-20px); opacity:0}
+  to {transform: translateY(0); opacity:1}
+}
+@keyframes animateTop {
+  from {transform: translateY(-20px); opacity:0}
+  to {transform: translateY(0); opacity:1}
+}
+
+@media (max-width:900px) {
+  #modal-bg{
+    opacity: 1;
+  }
+}
+
+@media (max-width: 630px) {
+	#modal-bg{
+		&.menu-bg{
+			width: 44px;
+			background: transparent;
+			&::before{
+				top: 11px;
+				left: auto;
+				right: 5px;
+			}
+		}
+  }
+}
