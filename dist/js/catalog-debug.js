@@ -22,11 +22,11 @@ if (document.getElementsByClassName("catalog-fermer").length){
 					slidesPerView: 1,
 					spaceBetween: 10,
 				},
-				340: {
+				540: {
 					slidesPerView: 2,
 					spaceBetween: 10,
 				},
-				720: {
+				800: {
 					slidesPerView: 3,
 					spaceBetween: 10,
 				},

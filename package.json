@@ -1,5 +1,5 @@
 {
-  "name": "dobroed",
+  "name": "aflex",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -10,10 +10,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://gitlab.com/nimaxlab/clients/dobroed/dobroed-front.git"
+    "url": ""
   },
   "keywords": [],
-  "author": "Nimax",
+  "author": "",
   "license": "MIT",
   "homepage": "[HOMEPAGE]",
   "bugs": {

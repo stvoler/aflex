@@ -5,8 +5,8 @@
 	&-wrapper{
 		display: grid;
 		grid-template-columns: auto 76%;
-		grid-column-gap: 72px;
-		grid-row-gap: 40px;
+		grid-column-gap: clamp(30px, 6.3vw, 72px);
+		grid-row-gap: clamp(20px, 3.2vw, 40px);
 		.title{
 			grid-column: 1/-1;
 		}
@@ -184,4 +184,21 @@
 			color: black;
 		}
 	}
+}
+
+@media(max-width:1180px){
+	.catalog{
+		&-wrapper{
+			aside{
+				grid-column: 1/-1;
+				padding: 26px;
+				border-radius: 8px;
+				background-color: var(--color2);
+			}
+		}
+		&-fermers{
+			width: calc(100vw - clamp(40px,5vw,60px));
+			grid-column: 1/-1;
+		}
+	}	
 }

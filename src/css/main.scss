@@ -879,6 +879,11 @@ section{
         filter: grayscale(0) brightness(1);
       }
     }
+    .call{
+      .icon-call{
+        filter: invert(1) brightness(1);
+      }
+    }
   }
   .slider{
     .container{
