@@ -232,12 +232,15 @@ const menuCatalog = document.querySelector('.menu-top');
 const menuCatalogLi = document.querySelectorAll('.menu-top .menu > li');
 // const menuTop = document.querySelector('.menu-top');
 const modalBg = document.querySelector('#modal-bg');
-triggerMenu.onclick = function() {
-  this.classList.toggle('active');
-	menuCatalog.classList.toggle('show');
-  // menuTop.classList.toggle('show');
-  modalBg.classList.toggle('menu-bg');
-  modalBg.classList.toggle('open');
+let w = window.matchMedia("(max-width: 800px)");
+if (w.matches) {
+  triggerMenu.onclick = function() {
+    this.classList.toggle('active');
+    menuCatalog.classList.toggle('show');
+    // menuTop.classList.toggle('show');
+    modalBg.classList.toggle('menu-bg');
+    modalBg.classList.toggle('open');
+  }
 }
 modalBg.onclick = function() {
 	triggerMenu.classList.remove('active');

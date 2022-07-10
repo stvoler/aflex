@@ -426,6 +426,7 @@ header {
       content: '';
       width: 16px;
       height: 16px;
+      filter: invert(1);
       background-repeat: no-repeat;
       background-size: contain;
       background-position: center;
@@ -768,7 +769,7 @@ p {
 main{
   display: grid;
   grid-template-columns: 1fr;
-  grid-row-gap: 100px;
+  grid-row-gap: clamp(60px,8vw,100px);
 }
 
 footer{
@@ -964,16 +965,16 @@ footer{
         border-radius: 6px;
         background-color: rgba(212, 212, 212, 0.5);
       }
-      &::after{
-        content: '';
-        background-color: rgba(128, 133, 138, 0.2);
-        width: 1px;
-        height: 100%;
-        left: 50%;
-        top: 0;
-        position: absolute;
-        display: block;
-      }
+      // &::after{
+      //   content: '';
+      //   background-color: rgba(128, 133, 138, 0.2);
+      //   width: 1px;
+      //   height: 100%;
+      //   left: 50%;
+      //   top: 0;
+      //   position: absolute;
+      //   display: block;
+      // }
       &.show{
         display: block;
       }

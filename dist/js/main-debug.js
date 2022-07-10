@@ -26,11 +26,11 @@ if (document.getElementsByClassName("news-carousel").length){
 		// 	prevEl: '.new-fermers .arrow-left',
 		// },
 		breakpoints: {
-			320: {
+			300: {
 				slidesPerView: 1,
 				spaceBetween: 10,
 			},
-			340: {
+			540: {
 				slidesPerView: 2,
 				spaceBetween: 10,
 			},
