@@ -98,6 +98,7 @@
 				background: var(--color6);
 				border-radius: 40px;
 				margin: auto 0 auto auto;
+				white-space: nowrap;
 				&::after{
 					content: '';
 					width: 6px;
@@ -189,6 +190,8 @@
 @media(max-width:1180px){
 	.catalog{
 		&-wrapper{
+			display: flex;
+			flex-direction: column;
 			aside{
 				grid-column: 1/-1;
 				padding: 26px;
@@ -197,8 +200,35 @@
 			}
 		}
 		&-fermers{
-			width: calc(100vw - clamp(40px,5vw,60px));
 			grid-column: 1/-1;
 		}
 	}	
+}
+
+@media(max-width:540px){
+	.catalog{
+		&-fermer{
+			.info{
+				.name,
+				.btn{
+					grid-column: 1/-1;
+				}
+				.btn{
+					grid-row: 2;
+					margin: 20px 0 0 0;
+				}
+			}
+		}
+	}
+}
+
+@media(max-width:450px){
+	.catalog{
+		&-fermer{
+			.arrow-left,
+			.arrow-right{
+				top: 43%;
+			}
+		}
+	}
 }

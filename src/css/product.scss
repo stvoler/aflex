@@ -542,17 +542,29 @@
 }
 
 @media(max-width:540px){
-  .catalog{
-		&-fermer{
-			.arrow-left,
-			.arrow-right{
-				display: none;
+	.product{
+		&-gallery{
+			grid-template-rows: 270px 170px;
+			grid-template-columns: 1fr 1fr;
+			.more {
+				top: 50%;
 			}
 		}
-    &.is-carousel{
-      width: calc(100% + 27vw);
-    }
-  }
+	}
+}
+
+@media(max-width:450px){
+	.product{
+		&-wrapper{
+			padding-top: 30px;
+		}
+		&-gallery{
+			grid-row: 2;
+		}
+	}
+	.breadcrumbs{
+		display: none;
+	}
 }
 
 @media(max-width: 380px){

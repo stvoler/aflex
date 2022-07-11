@@ -2,8 +2,8 @@
   grid-column: 1/-1;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-  grid-column-gap: 30px;
-  grid-row-gap: 40px;
+  grid-column-gap: clamp(20px, 2.6vw, 30px);
+  grid-row-gap: clamp(20px, 3.5vw, 40px);
 	&.is-carousel{
 		display: flex;
 	}
@@ -121,5 +121,11 @@
 @media(max-width:540px){
   .catalog{
     grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media(max-width:375px){
+  .catalog{
+    grid-template-columns: 1fr;
   }
 }

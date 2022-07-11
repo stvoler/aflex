@@ -20,19 +20,19 @@ if (document.getElementsByClassName("catalog-fermer").length){
 			breakpoints: {
 				320: {
 					slidesPerView: 1,
-					spaceBetween: 10,
+					spaceBetween: 15,
 				},
-				540: {
+				450: {
 					slidesPerView: 2,
-					spaceBetween: 10,
+					spaceBetween: 18,
 				},
-				800: {
+				630: {
 					slidesPerView: 3,
-					spaceBetween: 10,
+					spaceBetween: 18,
 				},
 				1000: {
 					slidesPerView: 4,
-					spaceBetween: 15
+					spaceBetween: 20
 				},
 				1800: {
 					slidesPerView: 4,
